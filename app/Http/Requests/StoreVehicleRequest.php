@@ -135,6 +135,10 @@ class StoreVehicleRequest extends FormRequest
                 'min:-2147483648',
                 'max:2147483647',
             ],
+            'source' => [
+                'string',
+                'nullable',
+            ],
         ];
     }
 }

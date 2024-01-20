@@ -258,6 +258,14 @@
                                         {{ $vehicle->year }}
                                     </td>
                                 </tr>
+                                <tr>
+                                    <th>
+                                        {{ trans('cruds.vehicle.fields.source') }}
+                                    </th>
+                                    <td>
+                                        {{ $vehicle->source }}
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                         <div class="form-group">

@@ -52,6 +52,7 @@ class Vehicle extends Model
         'model',
         'trim',
         'year',
+        'source',
         'created_at',
         'updated_at',
         'deleted_at',
