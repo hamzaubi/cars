@@ -39,6 +39,7 @@ class CreateVehiclesTable extends Migration
             $table->string('model')->nullable();
             $table->string('trim')->nullable();
             $table->integer('year')->nullable();
+            $table->string('source')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

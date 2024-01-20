@@ -244,6 +244,14 @@
                 <span class="help-block">{{ trans('cruds.vehicle.fields.year_helper') }}</span>
             </div>
             <div class="form-group">
+                <label for="source">{{ trans('cruds.vehicle.fields.source') }}</label>
+                <input class="form-control {{ $errors->has('source') ? 'is-invalid' : '' }}" type="text" name="source" id="source" value="{{ old('source', $vehicle->source) }}">
+                @if($errors->has('source'))
+                    <span class="text-danger">{{ $errors->first('source') }}</span>
+                @endif
+                <span class="help-block">{{ trans('cruds.vehicle.fields.source_helper') }}</span>
+            </div>
+            <div class="form-group">
                 <button class="btn btn-danger" type="submit">
                     {{ trans('global.save') }}
                 </button>
